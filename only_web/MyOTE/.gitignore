@@ -1,0 +1,8 @@
+/glove
+__pycache__/
+bert-base-chinese/
+log/
+state_dict/
+temp/model.bin
+hotelDatasets/
+.idea/

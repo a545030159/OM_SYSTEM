@@ -1,0 +1,137 @@
+.center{
+    text-align: center;
+    height: 70px;
+}
+.self-margin{
+    margin-left: 85px!important;
+}
+.self-margin-second{
+    margin-left: 260px!important;
+}
+.self-margin-third{
+    margin-left: 450px;
+}
+#title1{
+    font-size: 40px;!important;
+    margin-bottom: 70px;
+    position: relative;
+    bottom: -10px;
+}
+.textarea1{
+    margin-left: 16px;
+    margin-top:20px;
+    width: 870px;
+    height: 300px;
+    font-size: 20px;
+    border-radius: 15px;
+    line-height: 40px;
+    white-space: pre;
+    overflow: auto;
+    border:1px solid #000000;
+}
+
+.button_bar{
+    margin-top: 10px;
+    height: 70px;
+}
+
+
+.textarea2{
+margin-left: 10px;
+margin-top:20px;
+width: 870px;
+height: 300px;
+border:1px solid #000000;
+font-size: 20px;
+border-radius: 15px;
+line-height: 40px;
+overflow: auto;
+white-space: pre;
+}
+.center_button{
+    align-self:center;
+    margin-left: 10px;
+}
+.text_area_div{
+    line-height: 100px;
+    display:flex;
+    position: relative;
+}
+
+.time_div{
+    font-size: 20px;
+    line-height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.chart_label{
+    font-size: 20px;
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    height: 60px;
+    position: relative;
+    top:0;
+    text-align: center;
+}
+.div_label{
+    height: 60px;
+    margin-top: 12px
+}
+
+#echarts-dataset0{
+    padding: 10px;
+    position:absolute;
+    left: 0;
+    top: 505px;
+    width: 500px;
+    height: 100px;
+    z-index: 20;
+}
+
+
+#echarts-dataset1{
+    min-height:400px;
+    width: 30%;
+    float: left;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#echarts-dataset2{
+    min-height:400px;
+    width: 29%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+#evaluation_pos{
+    min-height:250px;
+    width: 19%;
+    float: left;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+#evaluation_neg{
+    min-height:250px;
+    width: 19%;
+    float: left;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.progress_css{
+  display: none;
+  position: fixed;
+  margin-top: 15px;
+  width: 120px;
+  z-index: 20;
+  height: 60px;
+}
+

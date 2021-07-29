@@ -1,0 +1,576 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 06, 2021 - 07:44:15
+Django version 3.2.3, using settings 'opinion_web.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 67, in tripleModel
+    pred_out = inf.evaluate(batch_text)
+  File "../only_web/MyOTE/infer.py", line 43, in evaluate
+    print('text_indeices:'+ str(text_indices.size()))
+AttributeError: 'list' object has no attribute 'size'
+[06/Jun/2021 07:44:30] "GET /mine/ HTTP/1.1" 500 120571
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 67, in tripleModel
+    pred_out = inf.evaluate(batch_text)
+  File "../only_web/MyOTE/infer.py", line 43, in evaluate
+    print('text_indeices:'+ str(len(text_indices)))
+AttributeError: 'list' object has no attribute 'size'
+[06/Jun/2021 07:46:09] "GET /mine/ HTTP/1.1" 500 120566
+/home/wsy/code/OM_system/only_web/MyOTE/infer.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 06, 2021 - 07:46:13
+Django version 3.2.3, using settings 'opinion_web.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text_indeices:52
+text_mask:52
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 67, in tripleModel
+    pred_out = inf.evaluate(batch_text)
+  File "../only_web/MyOTE/infer.py", line 51, in evaluate
+    infer_outpus = self.model(t_inputs)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "../only_web/MyOTE/models/ote.py", line 108, in forward
+    output = self.bert(input_ids=text_indices, attention_mask=text_mask)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/transformers/modeling_bert.py", line 810, in forward
+    extended_attention_mask: torch.Tensor = self.get_extended_attention_mask(attention_mask, input_shape, device)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/transformers/modeling_utils.py", line 246, in get_extended_attention_mask
+    raise ValueError(
+ValueError: Wrong shape for input_ids (shape torch.Size([52])) or attention_mask (shape torch.Size([52]))
+[06/Jun/2021 07:46:33] "GET /mine/ HTTP/1.1" 500 170059
+/home/wsy/code/OM_system/only_web/MyOTE/infer.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 06, 2021 - 07:47:12
+Django version 3.2.3, using settings 'opinion_web.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 67, in tripleModel
+    pred_out = inf.evaluate(batch_text)
+  File "../only_web/MyOTE/infer.py", line 43, in evaluate
+    print('text_indeices:'+ str(len(text_indices[0])))
+TypeError: object of type 'int' has no len()
+[06/Jun/2021 07:47:49] "GET /mine/ HTTP/1.1" 500 120506
+/home/wsy/code/OM_system/only_web/MyOTE/infer.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 06, 2021 - 07:47:53
+Django version 3.2.3, using settings 'opinion_web.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[06/Jun/2021 07:48:02] "POST /upload/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 67, in tripleModel
+    pred_out = inf.evaluate(batch_text)
+  File "../only_web/MyOTE/infer.py", line 43, in evaluate
+    print('text_indeices:'+ str(len(text_indices[0])))
+TypeError: object of type 'int' has no len()
+[06/Jun/2021 07:48:15] "GET /mine/ HTTP/1.1" 500 120501
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 67, in tripleModel
+    pred_out = inf.evaluate(batch_text)
+  File "../only_web/MyOTE/infer.py", line 43, in evaluate
+    # print('text_indeices:'+ str(len(text_indices[0])))
+TypeError: object of type 'int' has no len()
+[06/Jun/2021 07:48:51] "GET /mine/ HTTP/1.1" 500 120511
+/home/wsy/code/OM_system/only_web/MyOTE/infer.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 06, 2021 - 07:48:54
+Django version 3.2.3, using settings 'opinion_web.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text:52
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 67, in tripleModel
+    pred_out = inf.evaluate(batch_text)
+  File "../only_web/MyOTE/infer.py", line 52, in evaluate
+    infer_outpus = self.model(t_inputs)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "../only_web/MyOTE/models/ote.py", line 108, in forward
+    output = self.bert(input_ids=text_indices, attention_mask=text_mask)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/transformers/modeling_bert.py", line 810, in forward
+    extended_attention_mask: torch.Tensor = self.get_extended_attention_mask(attention_mask, input_shape, device)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/transformers/modeling_utils.py", line 246, in get_extended_attention_mask
+    raise ValueError(
+ValueError: Wrong shape for input_ids (shape torch.Size([52])) or attention_mask (shape torch.Size([52]))
+[06/Jun/2021 07:49:09] "GET /mine/ HTTP/1.1" 500 170045
+/home/wsy/code/OM_system/only_web/mining/triple_model.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 06, 2021 - 07:51:13
+Django version 3.2.3, using settings 'opinion_web.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 66, in tripleModel
+    print('text!:'+len(text))
+TypeError: can only concatenate str (not "int") to str
+[06/Jun/2021 07:51:53] "GET /mine/ HTTP/1.1" 500 111597
+/home/wsy/code/OM_system/only_web/mining/triple_model.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 06, 2021 - 07:51:56
+Django version 3.2.3, using settings 'opinion_web.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 66, in tripleModel
+    print('text!:'+len(text))
+TypeError: can only concatenate str (not "int") to str
+[06/Jun/2021 07:52:06] "GET /mine/ HTTP/1.1" 500 111600
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 66, in tripleModel
+    print('text!:'+str(len(text)))
+TypeError: can only concatenate str (not "int") to str
+[06/Jun/2021 07:52:28] "GET /mine/ HTTP/1.1" 500 111610
+/home/wsy/code/OM_system/only_web/mining/triple_model.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 06, 2021 - 07:52:31
+Django version 3.2.3, using settings 'opinion_web.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:100
+text:52
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 69, in tripleModel
+    pred_out = inf.evaluate(batch_text)
+  File "../only_web/MyOTE/infer.py", line 52, in evaluate
+    infer_outpus = self.model(t_inputs)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "../only_web/MyOTE/models/ote.py", line 108, in forward
+    output = self.bert(input_ids=text_indices, attention_mask=text_mask)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/transformers/modeling_bert.py", line 810, in forward
+    extended_attention_mask: torch.Tensor = self.get_extended_attention_mask(attention_mask, input_shape, device)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/transformers/modeling_utils.py", line 246, in get_extended_attention_mask
+    raise ValueError(
+ValueError: Wrong shape for input_ids (shape torch.Size([52])) or attention_mask (shape torch.Size([52]))
+[06/Jun/2021 07:52:45] "GET /mine/ HTTP/1.1" 500 169936
+[06/Jun/2021 07:54:22] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 07:54:28] "POST /upload/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:100
+text:52
+Internal Server Error: /mine/
+Traceback (most recent call last):
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/wsy/code/OM_system/only_web/opinion_web/views.py", line 21, in mine
+    return HttpResponse(decode('input.txt'))
+  File "/home/wsy/code/OM_system/only_web/mining/whole_model.py", line 41, in decode
+    triple_info = tripleModel(batch_text)  # List<Dict>    # [{text: str}
+  File "../only_web/mining/triple_model.py", line 69, in tripleModel
+    pred_out = inf.evaluate(batch_text)
+  File "../only_web/MyOTE/infer.py", line 52, in evaluate
+    infer_outpus = self.model(t_inputs)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "../only_web/MyOTE/models/ote.py", line 108, in forward
+    output = self.bert(input_ids=text_indices, attention_mask=text_mask)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/transformers/modeling_bert.py", line 810, in forward
+    extended_attention_mask: torch.Tensor = self.get_extended_attention_mask(attention_mask, input_shape, device)
+  File "/home/wsy/anaconda3/lib/python3.8/site-packages/transformers/modeling_utils.py", line 246, in get_extended_attention_mask
+    raise ValueError(
+ValueError: Wrong shape for input_ids (shape torch.Size([52])) or attention_mask (shape torch.Size([52]))
+[06/Jun/2021 07:54:34] "GET /mine/ HTTP/1.1" 500 169935
+/home/wsy/code/OM_system/only_web/mining/unit.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 06, 2021 - 07:54:55
+Django version 3.2.3, using settings 'opinion_web.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[06/Jun/2021 07:57:10] "GET / HTTP/1.1" 200 32116
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:100
+triple_all time:14.405948877334595
+triple_model time:3.6338248252868652
+cost time:14.408095121383667 
+Process target time: 0.0006389617919921875
+[06/Jun/2021 07:57:26] "GET /mine/ HTTP/1.1" 200 118679
+[06/Jun/2021 07:57:57] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 07:58:00] "POST /upload/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:1000
+triple_all time:32.984047174453735
+triple_model time:28.24271869659424
+cost time:32.98847007751465 
+Process target time: 0.006276845932006836
+[06/Jun/2021 07:58:34] "GET /mine/ HTTP/1.1" 200 1188831
+[06/Jun/2021 07:59:00] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 07:59:04] "POST /upload/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:100
+triple_all time:7.074930191040039
+triple_model time:1.8751397132873535
+cost time:7.079831600189209 
+Process target time: 0.0009486675262451172
+[06/Jun/2021 07:59:11] "GET /mine/ HTTP/1.1" 200 118679
+[06/Jun/2021 07:59:26] "GET / HTTP/1.1" 200 32116
+/home/wsy/code/OM_system/only_web/mining/unit.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+June 06, 2021 - 07:59:38
+Django version 3.2.3, using settings 'opinion_web.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[06/Jun/2021 08:00:26] "POST /post/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:1
+triple_all time:11.209311246871948
+triple_model time:0.7725799083709717
+cost time:11.211751222610474 
+Process target time: 6.461143493652344e-05
+[06/Jun/2021 08:00:40] "GET /mine/ HTTP/1.1" 200 2202
+[06/Jun/2021 08:00:51] "GET / HTTP/1.1" 200 32116
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:1
+triple_all time:4.8264007568359375
+triple_model time:0.042874813079833984
+cost time:4.828367710113525 
+Process target time: 4.57763671875e-05
+[06/Jun/2021 08:00:59] "GET /mine/ HTTP/1.1" 200 2202
+[06/Jun/2021 08:02:07] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 08:02:11] "POST /upload/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:100
+triple_all time:7.1364288330078125
+triple_model time:2.6658153533935547
+cost time:7.138634920120239 
+Process target time: 0.0006470680236816406
+[06/Jun/2021 08:02:19] "GET /mine/ HTTP/1.1" 200 118679
+[06/Jun/2021 08:07:44] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 08:07:51] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 08:07:55] "POST /upload/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:100
+triple_all time:7.188573598861694
+triple_model time:2.632737159729004
+cost time:7.190569162368774 
+Process target time: 0.0006625652313232422
+[06/Jun/2021 08:08:03] "GET /mine/ HTTP/1.1" 200 118679
+[06/Jun/2021 08:08:33] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 08:10:14] "POST /upload/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:100
+triple_all time:6.824475288391113
+triple_model time:2.4077649116516113
+cost time:6.832140684127808 
+Process target time: 0.00064849853515625
+[06/Jun/2021 08:10:24] "GET /mine/ HTTP/1.1" 200 118679
+[06/Jun/2021 08:10:36] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 08:10:36] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 08:11:05] "POST /upload/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:100
+triple_all time:6.680262088775635
+triple_model time:2.3682901859283447
+cost time:6.687863111495972 
+Process target time: 0.0006489753723144531
+[06/Jun/2021 08:11:14] "GET /mine/ HTTP/1.1" 200 118679
+[06/Jun/2021 08:16:38] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 08:16:49] "POST /post/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:1
+triple_all time:4.377363204956055
+triple_model time:0.02669978141784668
+cost time:4.380042791366577 
+Process target time: 4.38690185546875e-05
+[06/Jun/2021 08:16:55] "GET /mine/ HTTP/1.1" 200 2202
+[06/Jun/2021 08:18:40] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 08:19:14] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 08:27:38] "GET / HTTP/1.1" 200 32116
+[06/Jun/2021 08:41:32] "POST /upload/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:1000
+triple_all time:35.61711144447327
+triple_model time:30.97140336036682
+cost time:35.63862991333008 
+Process target time: 0.0064280033111572266
+[06/Jun/2021 08:42:08] "GET /mine/ HTTP/1.1" 200 1188831
+[07/Jun/2021 06:33:54] "GET / HTTP/1.1" 200 32116
+[07/Jun/2021 06:33:54] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[07/Jun/2021 06:33:54] "GET /static/css/mmss.css HTTP/1.1" 304 0
+[07/Jun/2021 06:33:54] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[07/Jun/2021 06:33:54] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[07/Jun/2021 06:33:54] "GET /static/js/jquery-1.11.3.js HTTP/1.1" 304 0
+[07/Jun/2021 06:33:54] "GET /static/js/echarts.min.js HTTP/1.1" 304 0
+[07/Jun/2021 06:33:54] "GET /static/img/bg-login.png HTTP/1.1" 304 0
+[07/Jun/2021 06:33:54] "GET /static/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+[07/Jun/2021 06:33:54] "GET /static/fonts/fontawesome-webfont.woff?v=3.0.1 HTTP/1.1" 304 0
+Not Found: /{% static 'img/logo.png'}
+[07/Jun/2021 06:33:54] "GET /%7B%%20static%20'img/logo.png'%7D HTTP/1.1" 404 2833
+[07/Jun/2021 06:33:59] "POST /upload/ HTTP/1.1" 200 21
+Some weights of the model checkpoint at /home/wsy/code/OM_system/only_web/MyOTE/bert-base-chinese were not used when initializing BertModel: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPretraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+loading model ote ...
+text!:1
+text:500
+triple_all time:19.95405125617981
+triple_model time:11.792724370956421
+cost time:19.956132411956787 
+Process target time: 0.0030143260955810547
+[07/Jun/2021 06:34:19] "GET /mine/ HTTP/1.1" 200 583280
+[07/Jun/2021 06:35:57] "GET / HTTP/1.1" 200 32116
+[07/Jun/2021 06:36:00] "GET / HTTP/1.1" 200 32116
+[07/Jun/2021 06:36:02] "GET / HTTP/1.1" 200 32116
+[07/Jun/2021 06:36:03] "GET / HTTP/1.1" 200 32116

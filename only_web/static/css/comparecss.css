@@ -1,0 +1,158 @@
+.center{
+    text-align: center;
+    height: 70px;
+}
+.self-margin{
+    margin-left: 94px!important;
+}
+.self-margin-second{
+    margin-left: 205px!important;
+}
+#title1{
+    font-size: 40px;!important;
+    margin-bottom: 70px;
+    position: relative;
+    bottom: -10px;
+}
+.button_bar{
+    margin-top: 23px;
+    height: 70px;
+}
+
+.textarea1{
+margin-left: 10px;
+margin-top:20px;
+width: 936px;
+height: 300px;
+resize: none;
+overflow: auto;
+border:1px solid #000000;
+font-size: 20px;
+border-radius: 15px;
+line-height: 40px;
+white-space: pre;
+}
+
+.textarea2{
+margin-left: 10px;
+margin-top:20px;
+width: 945px;
+height: 300px;
+resize: none;
+overflow: auto;
+border:1px solid #000000;
+font-size: 20px;
+border-radius: 15px;
+line-height: 40px;
+white-space: pre;
+}
+.center_button{
+    align-self:center;
+    margin-left: 20px;
+}
+.margin_left{
+    margin-left: 275px!important;
+}
+.margin_right{
+    float: right;
+    margin-right: 170px!important;
+}
+.text_area_div{
+    line-height: 100px;
+    display:flex;
+    position: relative;
+}
+
+.time_div{
+    font-size: 20px;
+    line-height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    width: 150px;
+    margin-left: 160px
+}
+.time_div1{
+    width: 150px;
+    font-size: 18px;
+    line-height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    float: right;
+    margin-right: 250px;
+}
+
+#echarts-dataset0{
+    padding: 10px;
+    position:absolute;
+    left: 80px;
+    top: 35px;
+    width: 700px;
+    height: 100px;
+    z-index: 20;
+}
+
+#echarts-dataset0_1{
+    padding: 10px;
+    position:absolute;
+    right: 80px;
+    top: 35px;
+    width: 700px;
+    height: 100px;
+    z-index: 20;
+}
+
+.evaluation_pos{
+    min-height:250px;
+    width: 24%;
+    float: left;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.evaluation_neg{
+    min-height:250px;
+    width: 24%;
+    float: left;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.progress_css{
+  display: none;
+  float: right;
+  width: 175px;
+  z-index: 20;
+  height: 60px;
+}
+.chart_label{
+    font-size: 20px;
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    height: 60px;
+    position: relative;
+    top:0;
+    text-align: center;
+}
+.div_label{
+    height: 60px;
+    margin-top: 12px
+}
+.self-label-margin-first{
+    margin-left: 273px!important;
+}
+.self-label-margin-second{
+    margin-left: 160px;
+}
+.self-label-margin-third{
+    margin-left: 536px!important;
+}
+.self-label-margin-forth{
+    margin-left: 160px;
+}
